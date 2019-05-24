@@ -1,0 +1,44 @@
+/* general */
+
+.wrap {
+	width: 100%;
+}
+
+.section {
+	margin: 0 auto;
+	padding: 10px 0;
+	width: 960px;
+
+	@media #{$break-large} {
+		padding: 10px $side-pad;
+		width: 100%;
+	}
+
+	@media #{$break-mobile} {
+		padding: 0 $side-pad;
+		width: 100%;
+	}
+}
+
+.container-padding {
+	padding: 100px 0;
+
+	@media #{$break-mobile} {
+		padding: 50px 0;
+	}
+}
+
+/* navigation anchors */
+.home-anchor,
+.portfolio-anchor,
+.about-anchor,
+.contact-anchor {
+	height: 0;
+	position: relative;
+	top: -70px;
+	width: 0;
+}
+
+.home-anchor {
+	top: 0;
+}

@@ -1,0 +1,20 @@
+// colors
+$beige: #edeaed;
+$black: #000;
+$blue: #008dee;
+$blue-lighten: lighten($blue, 15%);
+$font-white: #dedede;
+$gray-dk: #222;
+$gray-med: #5d5d5d;
+$gray-lt: #f0f0f0;
+$red: #f00;
+$white: #fff;
+
+$error: $red;
+
+// break points
+$break-large: "only screen and (max-width: 980px)";
+$break-tablet: "only screen and (max-width: 768px)";
+$break-mobile: "only screen and (max-width: 550px)";
+
+$side-pad: 2%;

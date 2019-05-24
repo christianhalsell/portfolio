@@ -1,0 +1,137 @@
+/* header */
+.header-wrap {
+	background: $black;
+	position: fixed;
+}
+
+header {
+	background: $black url(../images/gradient-border.png) no-repeat center bottom;
+	color: $white;
+	height: 70px;
+	margin: 0 auto;
+	width: 960px;
+
+	@media #{$break-large} {
+		width: 100%;
+	}
+
+	&.section {
+		padding-top: 20px;
+		@media #{$break-mobile} {
+			padding: 20px 0;
+		}
+	}
+
+	a {
+		color: $white;
+		text-decoration: none;
+
+		&:hover {
+			color: $blue;
+		}
+	}
+}
+
+.logo {
+	float: left;
+	font-size: 20px;
+	width: 240px;
+
+	@media #{$break-large} {
+		width: 28%;
+		margin-left: $side-pad;
+	}
+
+	@media #{$break-mobile} {
+		height: 50px;
+		width: 100%;
+	}
+}
+
+.mobile-nav-button {
+	background-color: $gray-med;
+	border: 0;
+	border-radius: 4px;
+	cursor: pointer;
+	display: none;
+	outline: 0;
+	padding: 4px;
+	position: relative;
+	top: -4px;
+
+	@media #{$break-mobile} {
+		display: block;
+		float: right;
+		margin-right: $side-pad + 2;
+	}
+}
+
+.icon-bar {
+	background-color: $white;
+	display: block;
+	height: 3px;
+	margin: 4px;
+	width: 22px;
+}
+
+.navigation {
+	float: right;
+	text-align: right;
+	vertical-align: middle;
+	width: 720px;
+
+	@media #{$break-large} {
+		width: 70%;
+	}
+
+	@media #{$break-mobile} {
+		clear: both;
+		width: 100%;
+	}
+
+	li {
+		display: inline-block;
+		margin-left: 40px;
+		text-transform: uppercase;
+
+		@media #{$break-tablet} {
+			margin-left: 1%;
+		}
+
+		@media #{$break-mobile} {
+			display: block;
+			margin: 0;
+			width: 100%;
+		}
+	}
+
+	a {
+		@media #{$break-tablet} {
+			background-color: $blue;
+			border-radius: 8px;
+			margin-left: 0;
+			padding: 10px 14px;
+		}
+
+		@media #{$break-mobile} {
+			border-radius: 0;
+			display: block;
+			width: 100%;
+		}
+
+		&:hover {
+			@media #{$break-tablet} {
+				background-color: $blue-lighten;
+				color: $white;
+			}
+		}
+	}
+}
+
+.accordion {
+	display: block;
+
+	@media #{$break-mobile} {
+		display: none;
+	}
+}

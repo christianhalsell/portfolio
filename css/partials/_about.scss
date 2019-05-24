@@ -1,0 +1,11 @@
+/* about */
+.about-wrap {
+	background-color: $white;
+}
+
+.about {
+	color: $gray-dk;
+	font-weight: $font-light;
+	
+	@extend .container-padding;
+}

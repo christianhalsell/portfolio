@@ -1,0 +1,57 @@
+/* banner */
+.banner-wrap {
+	background:
+		url(../images/banner-gradient-left.png) repeat-y left top,
+		url(../images/banner-gradient-right.png) repeat-y right top,
+		url(../images/banner-bg.jpg) no-repeat center top;
+
+	@media #{$break-tablet} {
+		background: url(../images/banner-bg.jpg) no-repeat center top;
+	}
+}
+
+.banner {
+	color: $font-white;
+	display: table;
+	padding-top: 70px;
+	//padding: 200px 100px 150px;
+	text-align: center;
+
+	.banner-inner {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	@media #{$break-tablet} {
+		padding: 160px $side-pad 110px;
+	}
+
+	@media #{$break-mobile} {
+		padding: 110px $side-pad 80px;
+	}
+
+	h1, h2, h3 {
+		color: $font-white;
+	}
+
+	h3 {
+		padding: 0 40px;
+
+		@media #{$break-tablet} {
+			padding: 0;
+		}
+	}
+
+	hr {
+		border: none 0;
+		background: $blue;
+		color: $blue;
+		height: 4px;
+		margin: 100px auto;
+		width: 60%;
+
+		@media #{$break-tablet} {
+			margin: 50px auto;
+		}
+	}
+}
